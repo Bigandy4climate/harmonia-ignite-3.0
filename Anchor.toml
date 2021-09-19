@@ -5,7 +5,7 @@ mysolanaapp = "GoNmVDSxq5GjTH8n6d15bDnUuHXvTnWDX2BUnZPY51yA"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/nuhutuh25/.config/solana/id.json"
 
 [scripts]
