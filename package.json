@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "@mui/material": "^5.0.0",
         "@project-serum/anchor": "^0.16.0",
         "@solana/wallet-adapter-base": "^0.6.0",
         "@solana/wallet-adapter-react": "^0.12.0",
