@@ -68,19 +68,14 @@ export default function Album() {
               color="text.secondary"
               paragraph
             >
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              Something
             </Typography>
             <Stack
               sx={{ pt: 4 }}
               direction="row"
               spacing={2}
               justifyContent="center"
-            >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
-            </Stack>
+            ></Stack>
           </Container>
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
