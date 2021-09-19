@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/nuhutuh25/Desktop/mysolanaapp/target/bpfel-unknown-unknown/release/build/typenum-cab501eac076cc7f/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/home/nuhutuh25/Desktop/mysolanaapp/target/bpfel-unknown-unknown/release/build/typenum-cab501eac076cc7f/out/op.rs
