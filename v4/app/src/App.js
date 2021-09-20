@@ -34,7 +34,7 @@ function App() {
   async function getProvider() {
     /* create the provider and return it to the caller */
     /* network set to local network for now */
-
+    const network = { network };
     const connection = new Connection(network, opts.preflightCommitment);
     const provider = new Provider(connection, wallet, opts.preflightCommitment);
     return provider;
