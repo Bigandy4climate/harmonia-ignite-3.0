@@ -12,12 +12,7 @@ import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 
 const wallets = [getPhantomWallet()];
 const network = clusterApiUrl("devnet");
-const Keypair = web3;
-const baseAccount = Keypair.generate();
-const opts = {
-  preflightCommitment: "processed",
-};
-const programID = new PublicKey(idl.metadata.address);
+
 function App() {
   return (
     <div className="App">
