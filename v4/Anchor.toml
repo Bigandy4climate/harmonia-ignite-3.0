@@ -5,7 +5,7 @@ v4 = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "testnet"
+cluster = "devnet"
 wallet = "/home/nuhutuh25/.config/solana/id.json"
 
 [scripts]
