@@ -3,19 +3,14 @@ import { useState } from "react";
 import { Connection, PublicKey } from "@solana/web3.js";
 import { Program, Provider, web3 } from "@project-serum/anchor";
 import idl from "./idl.json";
-
-import { getPhantomWallet } from "@solana/wallet-adapter-wallets";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-
-const wallets = [getPhantomWallet()];
 const { SystemProgram, Keypair } = web3;
 const baseAccount = Keypair.generate();
 const opts = {
   preflightCommitment: "processed",
 };
 const programID = new PublicKey(idl.metadata.address);
-
 function Registry() {
   const [value, setValue] = useState("");
   const [dataList, setDataList] = useState([]);

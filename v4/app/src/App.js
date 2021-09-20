@@ -1,8 +1,6 @@
 import "./App.css";
 import Album from "./components/album";
-import { PublicKey, clusterApiUrl } from "@solana/web3.js";
-import { web3 } from "@project-serum/anchor";
-import idl from "./idl.json";
+import { clusterApiUrl } from "@solana/web3.js";
 import { getPhantomWallet } from "@solana/wallet-adapter-wallets";
 import {
   WalletProvider,
