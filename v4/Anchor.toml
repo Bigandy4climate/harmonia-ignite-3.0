@@ -5,8 +5,8 @@ v4 = "GjebyCcaWxzVrVwdDBR7KGom9CX9FawtdJpLfYvV1eyc"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "devnet"
-wallet = "/home/nuhutuh25/.config/solana/id.json"
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
 
 [scripts]
 test = "mocha -t 1000000 tests/"

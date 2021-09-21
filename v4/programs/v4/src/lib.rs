@@ -1,10 +1,9 @@
-/* programs/mysolanaapp/src/lib.rs */
 use anchor_lang::prelude::*;
 
 declare_id!("GjebyCcaWxzVrVwdDBR7KGom9CX9FawtdJpLfYvV1eyc");
 
 #[program]
-mod mysolanaapp {
+mod v4 {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>, data: String) -> ProgramResult {
