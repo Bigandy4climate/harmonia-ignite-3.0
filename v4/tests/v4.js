@@ -3,7 +3,6 @@ const anchor = require("@project-serum/anchor");
 const { SystemProgram } = anchor.web3;
 
 describe("Mysolanaapp", () => {
-
   const provider = anchor.Provider.env();
   anchor.setProvider(provider);
   const program = anchor.workspace.V4;
@@ -45,5 +44,4 @@ describe("Mysolanaapp", () => {
     console.log("All data: ", account.dataList);
     assert.ok(account.dataList.length === 2);
   });
-
 });
