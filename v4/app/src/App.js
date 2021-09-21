@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { Connection, PublicKey, clusterApiUrl } from "@solana/web3.js";
+import { Connection, PublicKey } from "@solana/web3.js";
 import { Program, Provider, web3 } from "@project-serum/anchor";
 import idl from "./idl.json";
 
@@ -16,7 +16,7 @@ import {
 } from "@solana/wallet-adapter-react-ui";
 
 const wallets = [getPhantomWallet()];
-const network = clusterApiUrl("devnet");
+
 const { SystemProgram, Keypair } = web3;
 const baseAccount = Keypair.generate();
 const opts = {
@@ -33,7 +33,7 @@ function App() {
   async function getProvider() {
     /* create the provider and return it to the caller */
     /* network set to local network for now */
-
+    const network = "http://127.0.0.1:8899";
     const connection = new Connection(network, opts.preflightCommitment);
 
     const provider = new Provider(connection, wallet, opts.preflightCommitment);
@@ -126,7 +126,7 @@ function App() {
 }
 
 const AppWithProvider = () => (
-  <ConnectionProvider endpoint={network}>
+  <ConnectionProvider endpoint="http://127.0.0.1:8899">
     <WalletProvider wallets={wallets} autoConnect>
       <WalletModalProvider>
         <App />
